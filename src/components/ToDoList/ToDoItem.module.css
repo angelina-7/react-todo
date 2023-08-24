@@ -1,0 +1,28 @@
+.done {
+    text-decoration-line: line-through;
+}
+
+.li {
+    display: flex;
+    justify-content: space-between;
+    color: #220C10;
+    width: 400px;
+    border-bottom: #506C64 1px solid;
+    margin-bottom: 3px;
+}
+
+.actions {
+    display: flex;
+}
+
+.icon {
+    padding: 3px;
+}
+
+.p {
+    margin: 0;
+    padding: 3px 8px;
+    flex-grow: 1;
+    max-width: 300px;
+    overflow-wrap: break-word;
+}

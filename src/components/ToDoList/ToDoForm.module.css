@@ -1,0 +1,56 @@
+.wraper{
+    width: 400px;
+    height: 150px;
+    background-color: #77CBB9;
+    border: #506C64 2px dotted;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.label {
+    margin: 5px 8px;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 20px;
+    color: #220C10;
+}
+
+.input {
+    margin: 0 6px;
+    color: #220C10;
+    font-size: 16px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: #506C64 2px solid;
+}
+
+.input:focus{
+    outline: 0;
+    border-bottom-color: #220C10
+}
+
+.actions {
+    align-self: flex-end;
+    display: flex;
+    justify-content: space-evenly;
+    width: 120px;
+}
+
+.buttonAdd{
+    padding: 2px 8px;
+    background-color: #506C64;
+    border: #506C64 2px solid;
+    border-radius: 5px;
+    color: white;
+}
+
+.buttonCancel{
+    padding: 2px 8px;
+    background-color: #EA526F;
+    border: #EA526F 2px solid;
+    border-radius: 5px;
+    color: white;
+}

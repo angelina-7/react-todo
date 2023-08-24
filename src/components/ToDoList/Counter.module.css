@@ -1,0 +1,14 @@
+.counter {
+    padding: 3px 6px;
+    border: #EA526F 1px solid;
+    border-radius: 15px;
+    color: #EA526F;
+}
+
+.counterComplete {
+    padding: 3px 6px;
+    border: #77CBB9 1px solid;
+    border-radius: 15px;
+    background-color: #77CBB9;
+    color: white;
+}

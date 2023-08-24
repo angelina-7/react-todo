@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ToDoItem from './ToDoItem';
 import ToDoForm from './ToDoForm';
+import Counter from './Counter';
 import styles from './ToDoList.module.css'
 
 class ToDoList extends Component {
@@ -64,19 +65,10 @@ class ToDoList extends Component {
     }
 
     render() {
-        const all = this.state.isDone.length
-        const notDone = this.state.isDone.filter(t => t === false).length
-
-        const counerNotDone = <div>You have <span className={styles.counter}>{this.state.tasks.length}</span> tasks today!</div>
-        const counerAllDone = <div>You have completed all <span className={styles.counterComplete}>{this.state.tasks.length}</span> tasks today!</div>
-        const counerPartiallyDone = <div>You have completed <span className={styles.counter}>{all - notDone}/{all}</span> tasks today!</div>
-
-        const counter = notDone === 0 ? counerAllDone : notDone === all ? counerNotDone : counerPartiallyDone
-
         return (
             <div className={styles.component}>
                 <h1 className={styles.text}>ToDo List</h1>
-                {counter}
+                <Counter isDone={this.state.isDone} />
                 <ul className={styles.ul}>
                     {this.state.tasks.map((task, i) => {
                         return <ToDoItem key={task} onDelete={() => this.handleDelete(i)} onEdit={() => this.handleEdit(i)} onDone={() => this.handleDone(i)} isDone={this.state.isDone[i]}>{task}</ToDoItem>
